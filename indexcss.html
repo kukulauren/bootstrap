@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body{
+            height: 3000px;
+        }
+        .box{
+            height: 300px;
+            position: relative;
+        }
+        .box-one{
+            position: absolute;
+            z-index: 3;
+            top: 10px;
+        }
+        .box-two{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+        .box-three{
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box border border-primary border-3 m-3">
+        <div class="box-one p-3 bg-black"></div>
+        <div class="box-two p-4 bg-primary"></div>
+        <div class="box-three p-5 bg-info"></div>
+    </div>
+</body>
+</html>

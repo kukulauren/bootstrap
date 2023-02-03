@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <h3>Modal</h3>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Alarm <span class=" badge bg-warning position-absolute top-0 start-100 translate-middle">3</span>
+  </button>
+  
+  <!-- Testing Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Alarm</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBwHRkBNY7pKsbYKBKbLyMfBXPkuHvolEKkw&usqp=CAU" class="w-100" alt="">
+          <h5>You was reported for spreading misinformation</h5>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Page Policy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <h3>Offcanvas</h3>
+  <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+  </button>
+  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <!-- Slideshow/Carousel  -->
+  <h3>Carousel</h3>
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"  class="active" ></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" ></button>
+      <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B980%2C266%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F09%2F09%2FFrozen.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B980%2C266%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F09%2F09%2FFrozen.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=%5B980%2C266%5D&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F09%2F09%2FFrozen.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+  <div class=" carousel slide" id="dd">
+    <div class="carousel-inner bg-info">
+      <div class=" carousel-item active">
+          <div class="border border-3 p-5 " >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet natus quo praesentium cumque, nobis dicta doloremque in reiciendis totam dolorum nulla qui adipisci architecto quis cupiditate nam consequuntur quia.</div>
+      </div>
+      <div class=" carousel-item">
+        <div class="border border-3 p-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet natus quo praesentium cumque, nobis dicta doloremque in reiciendis totam dolorum nulla qui adipisci architecto quis cupiditate nam consequuntur quia.</div>
+      </div>
+      <div class=" carousel-item">
+        <div class="border border-3 p-5" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint amet natus quo praesentium cumque, nobis dicta doloremque in reiciendis totam dolorum nulla qui adipisci architecto quis cupiditate nam consequuntur quia.</div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#dd" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#dd" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <hr>
+  
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
